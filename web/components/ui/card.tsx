@@ -39,8 +39,9 @@ const CardTitle = React.forwardRef<
       "text-2xl font-semibold leading-none tracking-tight",
       className
     )}
-    {...props}
-  />
+
+  >{props.children || "Default Heading Text"}
+</h3>
 ))
 CardTitle.displayName = "CardTitle"
 
